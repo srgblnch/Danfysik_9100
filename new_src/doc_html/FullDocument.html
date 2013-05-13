@@ -1,0 +1,2003 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<html>
+<head>
+<title> Danfysik Tango Class User&lsquo;s Guide </title>
+</head>
+<body text="Black" bgcolor="White" link="Blue" vlink="Purple" alink="Red">
+<table border="0" width="100%" cellspacing="0" cellpadding="0" >
+    <td align="center">
+        <a href="http://www.esrf.fr/" target=new>
+            <IMG SRC="http://www.esrf.fr/gifs/logo/80.gif" border=0 Height="40"></a>
+    </td>
+    <td align="center">
+        <a href="http://www.elettra.trieste.it/" target=new>
+            <IMG SRC="http://www.esrf.fr/computing/cs/tango/elettra_logo.gif" border=0 Height="40"></a>
+    </td>
+    <td align="center">
+        <a href="http://www.synchrotron-soleil.fr/" target=new>
+            <IMG SRC="http://www.esrf.fr/computing/cs/tango/soleil_logo.gif" border=0 Height="40"></a>
+    </td>
+    <td align="center">
+        <a href="http://www.cells.es/" target=new>
+            <IMG SRC="http://www.esrf.fr/computing/cs/tango/alba.jpg" border=0 Height="27"></a>
+    </td>
+    <td align="center">
+        <a href="http://www.tango-controls.org/" target="_top">
+           <img src="http://www.tango-controls.org/logo.jpg" alt=""  height="35" /></a>
+    </td>
+    <td align="center">
+        <a href="http://www.desy.de/html/home/index_eng.html" target=new>
+            <IMG SRC="http://www.esrf.fr/computing/cs/tango/desy.gif" border=0 Height="30"></a>
+    </td>
+    <td align="center">
+        <a href="http://www.maxlab.lu.se/maxlab/max4/index.html" target=new>
+            <IMG SRC="http://www.esrf.fr/computing/cs/tango/maxlab.gif" border=0 Height="27"></a>
+    </td>
+    <td align="center">
+        <a href="http://www.frm2.tum.de/en/index.html" target=new>
+            <IMG SRC="http://www.esrf.fr/computing/cs/tango/frm-2.jpg" border=0 Height="28"></a>
+    </td>
+</table>
+<hr>
+<br>
+<center><h2><u><b> Danfysik Tango Python Class </b></u></h2></center>	<br><br>
+	<ul>
+		<font size="+1"><u><b> Contents : </b></u></font>
+		<ul>
+			<li> <a href="FullDocument.html#description">  Description  </a>
+			<li> <a href="FullDocument.html#properties">   Properties   </a>
+			<li> <a href="FullDocument.html#commands">     Commands     </a>
+			<ul>
+				<li> <a href="FullDocument.html#cmdState"> State </a>
+				<li> <a href="FullDocument.html#cmdStatus"> Status </a>
+				<li> <a href="FullDocument.html#cmdOff"> Off </a>
+				<li> <a href="FullDocument.html#cmdOn"> On </a>
+				<li> <a href="FullDocument.html#cmdResetInterlocks"> ResetInterlocks </a>
+				<li> <a href="FullDocument.html#cmdUpdateStatus"> UpdateStatus </a>
+				<li> <a href="FullDocument.html#cmdReadAD"> ReadAD </a>
+			</ul>
+			<li> <a href="FullDocument.html#attributes">   Attributes   </a>
+			<ul>
+				<li> <a href="FullDocument.html#attrCurrent"> Current </a>
+				<li> <a href="FullDocument.html#attrCurrentSetpoint"> CurrentSetpoint </a>
+				<li> <a href="FullDocument.html#attrVoltage"> Voltage </a>
+				<li> <a href="FullDocument.html#attrCurrentSlewrate"> CurrentSlewrate </a>
+				<li> <a href="FullDocument.html#attrAmbientTemperature"> AmbientTemperature </a>
+				<li> <a href="FullDocument.html#attrStateCode64"> StateCode64 </a>
+				<li> <a href="FullDocument.html#attrRemoteMode"> RemoteMode </a>
+				<li> <a href="FullDocument.html#attrErrors"> Errors </a>
+			</ul>
+			<li> <a href="FullDocument.html#states">       States       </a>
+		</ul>
+	</ul>
+	<hr>
+<br><br>
+<a name="description"> </a>
+<ul>
+	<br><br><br>
+	<table border="0" width="100%">
+		<Tr>
+			<td> <font size="+1"><u><b> Danfysik Class Identification : </b></u></font> </td>
+			<td> <font size="+1"><u><b> Danfysik Class Inheritance : </b></u></font> </td>
+		</tr>
+		<td><ul>
+			<table border="0">
+				<Tr>
+					<td> Contact </td><td> : at cells.es - sblanch</td>
+				</tr>
+				<tr>
+					<td> Class Family </td><td> : PowerSupply
+				</tr>
+				<tr>
+					<td> Platform </td><td> : All Platforms </td>
+				</tr>
+				<tr>
+					<td> Bus </td><td> : Not Applicable </td>
+				</tr>
+				<tr>
+					<td> Manufacturer </td><td> : Danfysic </td>
+				</tr>
+				<tr>
+					<td> Manufacturer ref.</td><td> : 9100 </td>
+				</tr>
+			</Table>
+		</ul></td>
+		<td>
+			<ul><li> <a href="http://www.esrf.fr/computing/cs/tango/tango_doc/kernel_doc/" target="new"> Tango::DeviceImpl</a></li>
+			<ul> <li> Danfysik</li>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+		</td>
+	</Table>
+	<br><br><br>
+	<font size="+1"><u><b> Danfysik Class Description : </b></u></font>
+	<br><br>
+	<ul>
+		The tailor is rich and my mother is in the kitchen.
+		
+		<!---  /*PROTECTED REGION ID(FullDocument.html) ENABLED START*/  --->
+			<!--- Add your own documentation, pictures, links,.... --->
+			
+		<!---  /*PROTECTED REGION END*/  --->
+		
+	</ul>
+</ul>
+<br><br>
+<hr>
+<a name="properties"> </a>
+<br><br><br>
+<font size="+1"><u><b> Danfysik  Properties : </b></u></font>
+<br><br><br>
+<font size="+1"><u><b> There is no class properties </b></u></font>
+<br><br><br>
+<Table Border=2 Cellpadding=3 CELLSPACING=0>
+	<tr bgcolor="#CCCCFF" class="TableHeadingColor">
+	<td colspan=4> <font size=+1> <center><b> Device Properties </b></font></center></td>
+	<tr bgcolor="#CCCCFF" class="TableHeadingColor">
+		<td> <center><b> Name </b></center> </td>
+		<td> <center><b> Description </b></center> </td>
+		<td> <center><b> Type </b></center> </td>
+		<td> <center><b> Default Value </b></center> </td>
+	</tr>
+	<tr>
+		<td> SerialLine </td>
+		<td> The serial line to be used </td>
+		<td> String </td>
+		<td> none </td>
+	</tr>
+</table>
+<br><br>
+<hr>
+<a name="commands"> </a>
+<br><br><br><br>
+<Table Border=2 Cellpadding=3 CELLSPACING=0>
+	<tr bgcolor="#CCCCFF" class="TableHeadingColor">
+	<td colspan=5> <font size=+1> <center><b> Danfysik Class Commands </b></font></center></td>
+	<tr bgcolor="#CCCCFF" class="TableHeadingColor">
+		<td> <center><b> Name </b></center> </td>
+		<td> <center><b> Input type </b></center> </td>
+		<td> <center><b> Output type </b></center> </td>
+		<td> <center><b> Level </b></center> </td>
+		<td> <center><b> Description </b></center> </td>
+	</tr>
+	<tr>
+		<td> <a href="CmdState.html"> State </a> </td>
+		<td> DEV_VOID </td>
+		<td> DEV_STATE </td>
+		<td> OPERATOR </td>
+		<td> This command gets the device state (stored in its <i>device_state</i> data member) and returns it to the caller. </td>
+	</tr>
+	<tr>
+		<td> <a href="CmdStatus.html"> Status </a> </td>
+		<td> DEV_VOID </td>
+		<td> CONST_DEV_STRING </td>
+		<td> OPERATOR </td>
+		<td> This command gets the device status (stored in its <i>device_status</i> data member) and returns it to the caller. </td>
+	</tr>
+	<tr>
+		<td> <a href="CmdOff.html"> Off </a> </td>
+		<td> DEV_VOID </td>
+		<td> DEV_VOID </td>
+		<td> OPERATOR </td>
+		<td> None. </td>
+	</tr>
+	<tr>
+		<td> <a href="CmdOn.html"> On </a> </td>
+		<td> DEV_VOID </td>
+		<td> DEV_VOID </td>
+		<td> OPERATOR </td>
+		<td> None. </td>
+	</tr>
+	<tr>
+		<td> <a href="CmdResetInterlocks.html"> ResetInterlocks </a> </td>
+		<td> DEV_VOID </td>
+		<td> DEV_VOID </td>
+		<td> OPERATOR </td>
+		<td> None. </td>
+	</tr>
+	<tr>
+		<td> <a href="CmdUpdateStatus.html"> UpdateStatus </a> </td>
+		<td> DEV_VOID </td>
+		<td> DEV_VOID </td>
+		<td> OPERATOR </td>
+		<td> None. </td>
+	</tr>
+	<tr>
+		<td> <a href="CmdReadAD.html"> ReadAD </a> </td>
+		<td> DEV_SHORT </td>
+		<td> DEV_STRING </td>
+		<td> OPERATOR </td>
+		<td> None. </td>
+	</tr>
+</table>
+<br><br><hr>
+<a name="cmdState"> </a>
+<br><br><br>
+<font size="+1"><u><b> Command State : </b></u></font>
+<ul>
+	This command gets the device state (stored in its <i>device_state</i> data member) and returns it to the caller.
+</ul>
+<br><br><br>
+<Table Border=2 Cellpadding=3 CELLSPACING=0>
+	<tr bgcolor="#CCCCFF" class="TableHeadingColor">
+	<td colspan=0> <font size=+1> <center><b> State Definition </b></font></center></td>
+	</tr>
+	<tr>
+		<td> Input Argument </td>
+		<td> Tango::DEV_VOID </td>
+		<td> none. </td>
+	</tr>
+	<tr>
+		<td> Output Argument </td>
+		<td> Tango::DEV_STATE </td>
+		<td> State Code </td>
+	</tr>
+	<tr>
+		<td> DisplayLevel </td>
+		<td> OPERATOR </td>
+		<td> .. </td>
+	</tr>
+	<tr>
+		<td> Inherited </td>
+		<td> true </td>
+		<td> .. </td>
+	</tr>
+	<tr>
+		<td> Abstract </td>
+		<td> true </td>
+		<td> .. </td>
+	</tr>
+	<tr>
+		<td> Polling Period </td>
+		<td> Not polled </td>
+		<td> .. </td>
+	</tr>
+<Tr BGCOLOR="#CCCCFF"><Td><Hr></Td><Td><Hr></Td><Td><Hr></Td></Tr>
+	<tr>
+		<td> Command allowed for </td>
+		<td> All states </td>
+		<td> .. </td>
+	</tr>
+</table>
+<br><br><hr>
+<a name="cmdStatus"> </a>
+<br><br><br>
+<font size="+1"><u><b> Command Status : </b></u></font>
+<ul>
+	This command gets the device status (stored in its <i>device_status</i> data member) and returns it to the caller.
+</ul>
+<br><br><br>
+<Table Border=2 Cellpadding=3 CELLSPACING=0>
+	<tr bgcolor="#CCCCFF" class="TableHeadingColor">
+	<td colspan=0> <font size=+1> <center><b> Status Definition </b></font></center></td>
+	</tr>
+	<tr>
+		<td> Input Argument </td>
+		<td> Tango::DEV_VOID </td>
+		<td> none. </td>
+	</tr>
+	<tr>
+		<td> Output Argument </td>
+		<td> Tango::CONST_DEV_STRING </td>
+		<td> Status description </td>
+	</tr>
+	<tr>
+		<td> DisplayLevel </td>
+		<td> OPERATOR </td>
+		<td> .. </td>
+	</tr>
+	<tr>
+		<td> Inherited </td>
+		<td> true </td>
+		<td> .. </td>
+	</tr>
+	<tr>
+		<td> Abstract </td>
+		<td> true </td>
+		<td> .. </td>
+	</tr>
+	<tr>
+		<td> Polling Period </td>
+		<td> Not polled </td>
+		<td> .. </td>
+	</tr>
+<Tr BGCOLOR="#CCCCFF"><Td><Hr></Td><Td><Hr></Td><Td><Hr></Td></Tr>
+	<tr>
+		<td> Command allowed for </td>
+		<td> All states </td>
+		<td> .. </td>
+	</tr>
+</table>
+<br><br><hr>
+<a name="cmdOff"> </a>
+<br><br><br>
+<font size="+1"><u><b> Command Off : </b></u></font>
+<ul>
+</ul>
+<br><br><br>
+<Table Border=2 Cellpadding=3 CELLSPACING=0>
+	<tr bgcolor="#CCCCFF" class="TableHeadingColor">
+	<td colspan=0> <font size=+1> <center><b> Off Definition </b></font></center></td>
+	</tr>
+	<tr>
+		<td> Input Argument </td>
+		<td> Tango::DEV_VOID </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td> Output Argument </td>
+		<td> Tango::DEV_VOID </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td> DisplayLevel </td>
+		<td> OPERATOR </td>
+		<td> .. </td>
+	</tr>
+	<tr>
+		<td> Inherited </td>
+		<td> false </td>
+		<td> .. </td>
+	</tr>
+	<tr>
+		<td> Abstract </td>
+		<td> false </td>
+		<td> .. </td>
+	</tr>
+	<tr>
+		<td> Polling Period </td>
+		<td> Not polled </td>
+		<td> .. </td>
+	</tr>
+<Tr BGCOLOR="#CCCCFF"><Td><Hr></Td><Td><Hr></Td><Td><Hr></Td></Tr>
+	<tr>
+		<td> Command allowed for </td>
+		<td> All states </td>
+		<td> .. </td>
+	</tr>
+</table>
+<br><br><hr>
+<a name="cmdOn"> </a>
+<br><br><br>
+<font size="+1"><u><b> Command On : </b></u></font>
+<ul>
+</ul>
+<br><br><br>
+<Table Border=2 Cellpadding=3 CELLSPACING=0>
+	<tr bgcolor="#CCCCFF" class="TableHeadingColor">
+	<td colspan=0> <font size=+1> <center><b> On Definition </b></font></center></td>
+	</tr>
+	<tr>
+		<td> Input Argument </td>
+		<td> Tango::DEV_VOID </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td> Output Argument </td>
+		<td> Tango::DEV_VOID </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td> DisplayLevel </td>
+		<td> OPERATOR </td>
+		<td> .. </td>
+	</tr>
+	<tr>
+		<td> Inherited </td>
+		<td> false </td>
+		<td> .. </td>
+	</tr>
+	<tr>
+		<td> Abstract </td>
+		<td> false </td>
+		<td> .. </td>
+	</tr>
+	<tr>
+		<td> Polling Period </td>
+		<td> Not polled </td>
+		<td> .. </td>
+	</tr>
+<Tr BGCOLOR="#CCCCFF"><Td><Hr></Td><Td><Hr></Td><Td><Hr></Td></Tr>
+	<tr>
+		<td> Command allowed for </td>
+		<td> All states </td>
+		<td> .. </td>
+	</tr>
+</table>
+<br><br><hr>
+<a name="cmdResetInterlocks"> </a>
+<br><br><br>
+<font size="+1"><u><b> Command ResetInterlocks : </b></u></font>
+<ul>
+</ul>
+<br><br><br>
+<Table Border=2 Cellpadding=3 CELLSPACING=0>
+	<tr bgcolor="#CCCCFF" class="TableHeadingColor">
+	<td colspan=0> <font size=+1> <center><b> ResetInterlocks Definition </b></font></center></td>
+	</tr>
+	<tr>
+		<td> Input Argument </td>
+		<td> Tango::DEV_VOID </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td> Output Argument </td>
+		<td> Tango::DEV_VOID </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td> DisplayLevel </td>
+		<td> OPERATOR </td>
+		<td> .. </td>
+	</tr>
+	<tr>
+		<td> Inherited </td>
+		<td> false </td>
+		<td> .. </td>
+	</tr>
+	<tr>
+		<td> Abstract </td>
+		<td> false </td>
+		<td> .. </td>
+	</tr>
+	<tr>
+		<td> Polling Period </td>
+		<td> Not polled </td>
+		<td> .. </td>
+	</tr>
+<Tr BGCOLOR="#CCCCFF"><Td><Hr></Td><Td><Hr></Td><Td><Hr></Td></Tr>
+	<tr>
+		<td> Command allowed for </td>
+		<td> All states </td>
+		<td> .. </td>
+	</tr>
+</table>
+<br><br><hr>
+<a name="cmdUpdateStatus"> </a>
+<br><br><br>
+<font size="+1"><u><b> Command UpdateStatus : </b></u></font>
+<ul>
+</ul>
+<br><br><br>
+<Table Border=2 Cellpadding=3 CELLSPACING=0>
+	<tr bgcolor="#CCCCFF" class="TableHeadingColor">
+	<td colspan=0> <font size=+1> <center><b> UpdateStatus Definition </b></font></center></td>
+	</tr>
+	<tr>
+		<td> Input Argument </td>
+		<td> Tango::DEV_VOID </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td> Output Argument </td>
+		<td> Tango::DEV_VOID </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td> DisplayLevel </td>
+		<td> OPERATOR </td>
+		<td> .. </td>
+	</tr>
+	<tr>
+		<td> Inherited </td>
+		<td> false </td>
+		<td> .. </td>
+	</tr>
+	<tr>
+		<td> Abstract </td>
+		<td> false </td>
+		<td> .. </td>
+	</tr>
+	<tr>
+		<td> Polling Period </td>
+		<td> Not polled </td>
+		<td> .. </td>
+	</tr>
+<Tr BGCOLOR="#CCCCFF"><Td><Hr></Td><Td><Hr></Td><Td><Hr></Td></Tr>
+	<tr>
+		<td> Command allowed for </td>
+		<td> All states </td>
+		<td> .. </td>
+	</tr>
+</table>
+<br><br><hr>
+<a name="cmdReadAD"> </a>
+<br><br><br>
+<font size="+1"><u><b> Command ReadAD : </b></u></font>
+<ul>
+</ul>
+<br><br><br>
+<Table Border=2 Cellpadding=3 CELLSPACING=0>
+	<tr bgcolor="#CCCCFF" class="TableHeadingColor">
+	<td colspan=0> <font size=+1> <center><b> ReadAD Definition </b></font></center></td>
+	</tr>
+	<tr>
+		<td> Input Argument </td>
+		<td> Tango::DEV_SHORT </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td> Output Argument </td>
+		<td> Tango::DEV_STRING </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td> DisplayLevel </td>
+		<td> OPERATOR </td>
+		<td> .. </td>
+	</tr>
+	<tr>
+		<td> Inherited </td>
+		<td> false </td>
+		<td> .. </td>
+	</tr>
+	<tr>
+		<td> Abstract </td>
+		<td> false </td>
+		<td> .. </td>
+	</tr>
+	<tr>
+		<td> Polling Period </td>
+		<td> Not polled </td>
+		<td> .. </td>
+	</tr>
+<Tr BGCOLOR="#CCCCFF"><Td><Hr></Td><Td><Hr></Td><Td><Hr></Td></Tr>
+	<tr>
+		<td> Command allowed for </td>
+		<td> All states </td>
+		<td> .. </td>
+	</tr>
+</table>
+<br><br>
+<hr>
+<a name="attributes"> </a>
+<br><br><br><br>
+<Table Border=2 Cellpadding=3 CELLSPACING=0>
+	<tr bgcolor="#CCCCFF" class="TableHeadingColor">
+	<td colspan=8> <font size=+1> <center><b> Danfysik Class Attributes </b></font></center></td>
+	<tr bgcolor="#CCCCFF" class="TableHeadingColor">
+		<td> <center><b> Name </b></center> </td>
+		<td> <center><b> Inherited </b></center> </td>
+		<td> <center><b> Abstract </b></center> </td>
+		<td> <center><b> Attr. type </b></center> </td>
+		<td> <center><b> R/W type </b></center> </td>
+		<td> <center><b> Data type </b></center> </td>
+		<td> <center><b> Level </b></center> </td>
+		<td> <center><b> Description </b></center> </td>
+	</tr>
+	<tr>
+		<td> <a href="AttrCurrent.html"> Current </a> </td>
+		<td> false </td>
+		<td> false </td>
+		<td> Scalar </td>
+		<td> READ </td>
+		<td> Tango::DEV_DOUBLE </td>
+		<td> OPERATOR </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td> <a href="AttrCurrentSetpoint.html"> CurrentSetpoint </a> </td>
+		<td> false </td>
+		<td> false </td>
+		<td> Scalar </td>
+		<td> READ_WRITE </td>
+		<td> Tango::DEV_DOUBLE </td>
+		<td> OPERATOR </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td> <a href="AttrVoltage.html"> Voltage </a> </td>
+		<td> false </td>
+		<td> false </td>
+		<td> Scalar </td>
+		<td> READ </td>
+		<td> Tango::DEV_DOUBLE </td>
+		<td> OPERATOR </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td> <a href="AttrCurrentSlewrate.html"> CurrentSlewrate </a> </td>
+		<td> false </td>
+		<td> false </td>
+		<td> Scalar </td>
+		<td> READ_WRITE </td>
+		<td> Tango::DEV_DOUBLE </td>
+		<td> OPERATOR </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td> <a href="AttrAmbientTemperature.html"> AmbientTemperature </a> </td>
+		<td> false </td>
+		<td> false </td>
+		<td> Scalar </td>
+		<td> READ </td>
+		<td> Tango::DEV_DOUBLE </td>
+		<td> OPERATOR </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td> <a href="AttrStateCode64.html"> StateCode64 </a> </td>
+		<td> false </td>
+		<td> false </td>
+		<td> Scalar </td>
+		<td> READ </td>
+		<td> Tango::DEV_LONG64 </td>
+		<td> OPERATOR </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td> <a href="AttrRemoteMode.html"> RemoteMode </a> </td>
+		<td> false </td>
+		<td> false </td>
+		<td> Scalar </td>
+		<td> READ_WRITE </td>
+		<td> Tango::DEV_BOOLEAN </td>
+		<td> OPERATOR </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td> <a href="AttrErrors.html"> Errors </a> </td>
+		<td> false </td>
+		<td> false </td>
+		<td> Spectrum </td>
+		<td> READ </td>
+		<td> Tango::DEV_STRING </td>
+		<td> OPERATOR </td>
+		<td>  </td>
+	</tr>
+</table>
+<br><br>
+<hr>
+<br><br>
+<font size="+1"><u><b> There is no dynamic attribute defined. </b></u></font>
+<br><br>
+<hr>
+<a name="attrCurrent"> </a>
+<br><br><br>
+<font size="+1"><u><b> Attribute Current : </b></u></font>
+<ul>
+</ul>
+<br><br><br>
+<Table Border=0 Cellpadding=0 CELLSPACING=20>
+	<TR>
+		<TD ALIGN="left" VALIGN=top>
+			<Table Border=2 Cellpadding=3 CELLSPACING=0>
+				<tr bgcolor="#CCCCFF" class="TableHeadingColor">
+				<td colspan=0> <font size=+1> <center><b> Attribute Definition </b></font></center></td>
+				</tr>
+				<tr>
+					<td> Attribute Type </td>
+					<td> Scalar </td>
+				</tr>
+				<tr>
+					<td> R/W Type </td>
+					<td> READ </td>
+				</tr>
+				<tr>
+					<td> Data Type </td>
+					<td> Tango::DEV_DOUBLE </td>
+				</tr>
+				<tr>
+					<td> Display Level </td>
+					<td> OPERATOR </td>
+				</tr>
+				<tr>
+					<td> Inherited </td>
+					<td> false </td>
+				</tr>
+				<tr>
+					<td> Abstract </td>
+					<td> false </td>
+				</tr>
+				<tr>
+					<td> Polling Period </td>
+					<td> Not polled </td>
+				</tr>
+				<tr>
+					<td> Memorized </td>
+					<td> Not set </td>
+				</tr>
+			<Tr BGCOLOR="#CCCCFF"><Td><Hr></Td><Td><Hr></Td></Tr>
+				<tr>
+					<td> Read NOT allowed for </td>
+					<td> <font size="-1">  <li> INIT </li> </font> </td>
+				</tr>
+			</table>
+		</td>
+		<TD ALIGN="Center" VALIGN=top>
+			<Table Border=2 Cellpadding=3 CELLSPACING=0>
+				<tr bgcolor="#CCCCFF" class="TableHeadingColor">
+				<td colspan=0> <font size=+1> <center><b> Attribute Properties </b></font></center></td>
+				</tr>
+				<tr>
+					<td> label </td>
+					<td>  </td>
+				</tr>
+				<tr>
+					<td> unit </td>
+					<td> 'A' </td>
+				</tr>
+				<tr>
+					<td> standard unit </td>
+					<td>  </td>
+				</tr>
+				<tr>
+					<td> display unit </td>
+					<td>  </td>
+				</tr>
+				<tr>
+					<td> format </td>
+					<td>  </td>
+				</tr>
+				<tr>
+					<td> max_value </td>
+					<td>  </td>
+				</tr>
+				<tr>
+					<td> min_value </td>
+					<td>  </td>
+				</tr>
+				<tr>
+					<td> max_alarm </td>
+					<td>  </td>
+				</tr>
+				<tr>
+					<td> min_alarm </td>
+					<td>  </td>
+				</tr>
+				<tr>
+					<td> max_warning </td>
+					<td>  </td>
+				</tr>
+				<tr>
+					<td> min_warning </td>
+					<td>  </td>
+				</tr>
+				<tr>
+					<td> delta_time </td>
+					<td>  </td>
+				</tr>
+				<tr>
+					<td> delta_val </td>
+					<td>  </td>
+				</tr>
+			</table>
+		</td>
+		<TD ALIGN="Right" VALIGN=top>
+			<Table Border=2 Cellpadding=3 CELLSPACING=0>
+				<tr bgcolor="#CCCCFF" class="TableHeadingColor">
+				<td colspan=0> <font size=+1> <center><b> Attribute Event Criteria </b></font></center></td>
+				</tr>
+				<tr>
+					<td> Periodic </td>
+					<td> Not set </td>
+				</tr>
+				<tr>
+					<td> Relative Change </td>
+					<td> Not set </td>
+				</tr>
+				<tr>
+					<td> Absolute Change </td>
+					<td> Not set </td>
+				</tr>
+			<Tr BGCOLOR="#CCCCFF"><Td><Hr></Td><Td><Hr></Td></Tr>
+				<tr>
+					<td> Archive Periodic </td>
+					<td> Not set </td>
+				</tr>
+				<tr>
+					<td> Archive Relative Change </td>
+					<td> Not set </td>
+				</tr>
+				<tr>
+					<td> Archive Absolute Change </td>
+					<td> Not set </td>
+				</tr>
+			<Tr BGCOLOR="#CCCCFF"><Td><Hr></Td><Td><Hr></Td></Tr>
+				<tr>
+					<td> Push Change event by user code </td>
+					<td> false </td>
+				</tr>
+			<Tr BGCOLOR="#CCCCFF"><Td> </Td><Td> </Td></Tr>
+				<tr>
+					<td> Push Archive event by user code </td>
+					<td> false </td>
+				</tr>
+			<Tr BGCOLOR="#CCCCFF"><Td> </Td><Td> </Td></Tr>
+				<tr>
+					<td> Push DataReady event by user code </td>
+					<td> Not set </td>
+				</tr>
+			</table>
+		</td>
+	</TR>
+</table>
+<br><br>
+<hr>
+<a name="attrCurrentSetpoint"> </a>
+<br><br><br>
+<font size="+1"><u><b> Attribute CurrentSetpoint : </b></u></font>
+<ul>
+</ul>
+<br><br><br>
+<Table Border=0 Cellpadding=0 CELLSPACING=20>
+	<TR>
+		<TD ALIGN="left" VALIGN=top>
+			<Table Border=2 Cellpadding=3 CELLSPACING=0>
+				<tr bgcolor="#CCCCFF" class="TableHeadingColor">
+				<td colspan=0> <font size=+1> <center><b> Attribute Definition </b></font></center></td>
+				</tr>
+				<tr>
+					<td> Attribute Type </td>
+					<td> Scalar </td>
+				</tr>
+				<tr>
+					<td> R/W Type </td>
+					<td> READ_WRITE </td>
+				</tr>
+				<tr>
+					<td> Data Type </td>
+					<td> Tango::DEV_DOUBLE </td>
+				</tr>
+				<tr>
+					<td> Display Level </td>
+					<td> OPERATOR </td>
+				</tr>
+				<tr>
+					<td> Inherited </td>
+					<td> false </td>
+				</tr>
+				<tr>
+					<td> Abstract </td>
+					<td> false </td>
+				</tr>
+				<tr>
+					<td> Polling Period </td>
+					<td> Not polled </td>
+				</tr>
+				<tr>
+					<td> Memorized </td>
+					<td> Not set </td>
+				</tr>
+			<Tr BGCOLOR="#CCCCFF"><Td><Hr></Td><Td><Hr></Td></Tr>
+				<tr>
+					<td> Read NOT allowed for </td>
+					<td> <font size="-1">  <li> INIT </li> </font> </td>
+				</tr>
+				<tr>
+					<td> Write allowed for </td>
+					<td> All states </td>
+				</tr>
+			</table>
+		</td>
+		<TD ALIGN="Center" VALIGN=top>
+			<Table Border=2 Cellpadding=3 CELLSPACING=0>
+				<tr bgcolor="#CCCCFF" class="TableHeadingColor">
+				<td colspan=0> <font size=+1> <center><b> Attribute Properties </b></font></center></td>
+				</tr>
+				<tr>
+					<td> label </td>
+					<td>  </td>
+				</tr>
+				<tr>
+					<td> unit </td>
+					<td> 'A' </td>
+				</tr>
+				<tr>
+					<td> standard unit </td>
+					<td>  </td>
+				</tr>
+				<tr>
+					<td> display unit </td>
+					<td>  </td>
+				</tr>
+				<tr>
+					<td> format </td>
+					<td>  </td>
+				</tr>
+				<tr>
+					<td> max_value </td>
+					<td>  </td>
+				</tr>
+				<tr>
+					<td> min_value </td>
+					<td>  </td>
+				</tr>
+				<tr>
+					<td> max_alarm </td>
+					<td>  </td>
+				</tr>
+				<tr>
+					<td> min_alarm </td>
+					<td>  </td>
+				</tr>
+				<tr>
+					<td> max_warning </td>
+					<td>  </td>
+				</tr>
+				<tr>
+					<td> min_warning </td>
+					<td>  </td>
+				</tr>
+				<tr>
+					<td> delta_time </td>
+					<td>  </td>
+				</tr>
+				<tr>
+					<td> delta_val </td>
+					<td>  </td>
+				</tr>
+			</table>
+		</td>
+		<TD ALIGN="Right" VALIGN=top>
+			<Table Border=2 Cellpadding=3 CELLSPACING=0>
+				<tr bgcolor="#CCCCFF" class="TableHeadingColor">
+				<td colspan=0> <font size=+1> <center><b> Attribute Event Criteria </b></font></center></td>
+				</tr>
+				<tr>
+					<td> Periodic </td>
+					<td> Not set </td>
+				</tr>
+				<tr>
+					<td> Relative Change </td>
+					<td> Not set </td>
+				</tr>
+				<tr>
+					<td> Absolute Change </td>
+					<td> Not set </td>
+				</tr>
+			<Tr BGCOLOR="#CCCCFF"><Td><Hr></Td><Td><Hr></Td></Tr>
+				<tr>
+					<td> Archive Periodic </td>
+					<td> Not set </td>
+				</tr>
+				<tr>
+					<td> Archive Relative Change </td>
+					<td> Not set </td>
+				</tr>
+				<tr>
+					<td> Archive Absolute Change </td>
+					<td> Not set </td>
+				</tr>
+			<Tr BGCOLOR="#CCCCFF"><Td><Hr></Td><Td><Hr></Td></Tr>
+				<tr>
+					<td> Push Change event by user code </td>
+					<td> false </td>
+				</tr>
+			<Tr BGCOLOR="#CCCCFF"><Td> </Td><Td> </Td></Tr>
+				<tr>
+					<td> Push Archive event by user code </td>
+					<td> false </td>
+				</tr>
+			<Tr BGCOLOR="#CCCCFF"><Td> </Td><Td> </Td></Tr>
+				<tr>
+					<td> Push DataReady event by user code </td>
+					<td> Not set </td>
+				</tr>
+			</table>
+		</td>
+	</TR>
+</table>
+<br><br>
+<hr>
+<a name="attrVoltage"> </a>
+<br><br><br>
+<font size="+1"><u><b> Attribute Voltage : </b></u></font>
+<ul>
+</ul>
+<br><br><br>
+<Table Border=0 Cellpadding=0 CELLSPACING=20>
+	<TR>
+		<TD ALIGN="left" VALIGN=top>
+			<Table Border=2 Cellpadding=3 CELLSPACING=0>
+				<tr bgcolor="#CCCCFF" class="TableHeadingColor">
+				<td colspan=0> <font size=+1> <center><b> Attribute Definition </b></font></center></td>
+				</tr>
+				<tr>
+					<td> Attribute Type </td>
+					<td> Scalar </td>
+				</tr>
+				<tr>
+					<td> R/W Type </td>
+					<td> READ </td>
+				</tr>
+				<tr>
+					<td> Data Type </td>
+					<td> Tango::DEV_DOUBLE </td>
+				</tr>
+				<tr>
+					<td> Display Level </td>
+					<td> OPERATOR </td>
+				</tr>
+				<tr>
+					<td> Inherited </td>
+					<td> false </td>
+				</tr>
+				<tr>
+					<td> Abstract </td>
+					<td> false </td>
+				</tr>
+				<tr>
+					<td> Polling Period </td>
+					<td> Not polled </td>
+				</tr>
+				<tr>
+					<td> Memorized </td>
+					<td> Not set </td>
+				</tr>
+			<Tr BGCOLOR="#CCCCFF"><Td><Hr></Td><Td><Hr></Td></Tr>
+				<tr>
+					<td> Read NOT allowed for </td>
+					<td> <font size="-1">  <li> INIT </li> </font> </td>
+				</tr>
+			</table>
+		</td>
+		<TD ALIGN="Center" VALIGN=top>
+			<Table Border=2 Cellpadding=3 CELLSPACING=0>
+				<tr bgcolor="#CCCCFF" class="TableHeadingColor">
+				<td colspan=0> <font size=+1> <center><b> Attribute Properties </b></font></center></td>
+				</tr>
+				<tr>
+					<td> label </td>
+					<td>  </td>
+				</tr>
+				<tr>
+					<td> unit </td>
+					<td> 'V' </td>
+				</tr>
+				<tr>
+					<td> standard unit </td>
+					<td>  </td>
+				</tr>
+				<tr>
+					<td> display unit </td>
+					<td>  </td>
+				</tr>
+				<tr>
+					<td> format </td>
+					<td>  </td>
+				</tr>
+				<tr>
+					<td> max_value </td>
+					<td>  </td>
+				</tr>
+				<tr>
+					<td> min_value </td>
+					<td>  </td>
+				</tr>
+				<tr>
+					<td> max_alarm </td>
+					<td>  </td>
+				</tr>
+				<tr>
+					<td> min_alarm </td>
+					<td>  </td>
+				</tr>
+				<tr>
+					<td> max_warning </td>
+					<td>  </td>
+				</tr>
+				<tr>
+					<td> min_warning </td>
+					<td>  </td>
+				</tr>
+				<tr>
+					<td> delta_time </td>
+					<td>  </td>
+				</tr>
+				<tr>
+					<td> delta_val </td>
+					<td>  </td>
+				</tr>
+			</table>
+		</td>
+		<TD ALIGN="Right" VALIGN=top>
+			<Table Border=2 Cellpadding=3 CELLSPACING=0>
+				<tr bgcolor="#CCCCFF" class="TableHeadingColor">
+				<td colspan=0> <font size=+1> <center><b> Attribute Event Criteria </b></font></center></td>
+				</tr>
+				<tr>
+					<td> Periodic </td>
+					<td> Not set </td>
+				</tr>
+				<tr>
+					<td> Relative Change </td>
+					<td> Not set </td>
+				</tr>
+				<tr>
+					<td> Absolute Change </td>
+					<td> Not set </td>
+				</tr>
+			<Tr BGCOLOR="#CCCCFF"><Td><Hr></Td><Td><Hr></Td></Tr>
+				<tr>
+					<td> Archive Periodic </td>
+					<td> Not set </td>
+				</tr>
+				<tr>
+					<td> Archive Relative Change </td>
+					<td> Not set </td>
+				</tr>
+				<tr>
+					<td> Archive Absolute Change </td>
+					<td> Not set </td>
+				</tr>
+			<Tr BGCOLOR="#CCCCFF"><Td><Hr></Td><Td><Hr></Td></Tr>
+				<tr>
+					<td> Push Change event by user code </td>
+					<td> false </td>
+				</tr>
+			<Tr BGCOLOR="#CCCCFF"><Td> </Td><Td> </Td></Tr>
+				<tr>
+					<td> Push Archive event by user code </td>
+					<td> false </td>
+				</tr>
+			<Tr BGCOLOR="#CCCCFF"><Td> </Td><Td> </Td></Tr>
+				<tr>
+					<td> Push DataReady event by user code </td>
+					<td> Not set </td>
+				</tr>
+			</table>
+		</td>
+	</TR>
+</table>
+<br><br>
+<hr>
+<a name="attrCurrentSlewrate"> </a>
+<br><br><br>
+<font size="+1"><u><b> Attribute CurrentSlewrate : </b></u></font>
+<ul>
+</ul>
+<br><br><br>
+<Table Border=0 Cellpadding=0 CELLSPACING=20>
+	<TR>
+		<TD ALIGN="left" VALIGN=top>
+			<Table Border=2 Cellpadding=3 CELLSPACING=0>
+				<tr bgcolor="#CCCCFF" class="TableHeadingColor">
+				<td colspan=0> <font size=+1> <center><b> Attribute Definition </b></font></center></td>
+				</tr>
+				<tr>
+					<td> Attribute Type </td>
+					<td> Scalar </td>
+				</tr>
+				<tr>
+					<td> R/W Type </td>
+					<td> READ_WRITE </td>
+				</tr>
+				<tr>
+					<td> Data Type </td>
+					<td> Tango::DEV_DOUBLE </td>
+				</tr>
+				<tr>
+					<td> Display Level </td>
+					<td> OPERATOR </td>
+				</tr>
+				<tr>
+					<td> Inherited </td>
+					<td> false </td>
+				</tr>
+				<tr>
+					<td> Abstract </td>
+					<td> false </td>
+				</tr>
+				<tr>
+					<td> Polling Period </td>
+					<td> Not polled </td>
+				</tr>
+				<tr>
+					<td> Memorized </td>
+					<td> Not set </td>
+				</tr>
+			<Tr BGCOLOR="#CCCCFF"><Td><Hr></Td><Td><Hr></Td></Tr>
+				<tr>
+					<td> Read NOT allowed for </td>
+					<td> <font size="-1">  <li> INIT </li> </font> </td>
+				</tr>
+				<tr>
+					<td> Write allowed for </td>
+					<td> All states </td>
+				</tr>
+			</table>
+		</td>
+		<TD ALIGN="Center" VALIGN=top>
+			<Table Border=2 Cellpadding=3 CELLSPACING=0>
+				<tr bgcolor="#CCCCFF" class="TableHeadingColor">
+				<td colspan=0> <font size=+1> <center><b> Attribute Properties </b></font></center></td>
+				</tr>
+				<tr>
+					<td> label </td>
+					<td>  </td>
+				</tr>
+				<tr>
+					<td> unit </td>
+					<td> 'A/s' </td>
+				</tr>
+				<tr>
+					<td> standard unit </td>
+					<td>  </td>
+				</tr>
+				<tr>
+					<td> display unit </td>
+					<td>  </td>
+				</tr>
+				<tr>
+					<td> format </td>
+					<td>  </td>
+				</tr>
+				<tr>
+					<td> max_value </td>
+					<td>  </td>
+				</tr>
+				<tr>
+					<td> min_value </td>
+					<td>  </td>
+				</tr>
+				<tr>
+					<td> max_alarm </td>
+					<td>  </td>
+				</tr>
+				<tr>
+					<td> min_alarm </td>
+					<td>  </td>
+				</tr>
+				<tr>
+					<td> max_warning </td>
+					<td>  </td>
+				</tr>
+				<tr>
+					<td> min_warning </td>
+					<td>  </td>
+				</tr>
+				<tr>
+					<td> delta_time </td>
+					<td>  </td>
+				</tr>
+				<tr>
+					<td> delta_val </td>
+					<td>  </td>
+				</tr>
+			</table>
+		</td>
+		<TD ALIGN="Right" VALIGN=top>
+			<Table Border=2 Cellpadding=3 CELLSPACING=0>
+				<tr bgcolor="#CCCCFF" class="TableHeadingColor">
+				<td colspan=0> <font size=+1> <center><b> Attribute Event Criteria </b></font></center></td>
+				</tr>
+				<tr>
+					<td> Periodic </td>
+					<td> Not set </td>
+				</tr>
+				<tr>
+					<td> Relative Change </td>
+					<td> Not set </td>
+				</tr>
+				<tr>
+					<td> Absolute Change </td>
+					<td> Not set </td>
+				</tr>
+			<Tr BGCOLOR="#CCCCFF"><Td><Hr></Td><Td><Hr></Td></Tr>
+				<tr>
+					<td> Archive Periodic </td>
+					<td> Not set </td>
+				</tr>
+				<tr>
+					<td> Archive Relative Change </td>
+					<td> Not set </td>
+				</tr>
+				<tr>
+					<td> Archive Absolute Change </td>
+					<td> Not set </td>
+				</tr>
+			<Tr BGCOLOR="#CCCCFF"><Td><Hr></Td><Td><Hr></Td></Tr>
+				<tr>
+					<td> Push Change event by user code </td>
+					<td> false </td>
+				</tr>
+			<Tr BGCOLOR="#CCCCFF"><Td> </Td><Td> </Td></Tr>
+				<tr>
+					<td> Push Archive event by user code </td>
+					<td> false </td>
+				</tr>
+			<Tr BGCOLOR="#CCCCFF"><Td> </Td><Td> </Td></Tr>
+				<tr>
+					<td> Push DataReady event by user code </td>
+					<td> Not set </td>
+				</tr>
+			</table>
+		</td>
+	</TR>
+</table>
+<br><br>
+<hr>
+<a name="attrAmbientTemperature"> </a>
+<br><br><br>
+<font size="+1"><u><b> Attribute AmbientTemperature : </b></u></font>
+<ul>
+</ul>
+<br><br><br>
+<Table Border=0 Cellpadding=0 CELLSPACING=20>
+	<TR>
+		<TD ALIGN="left" VALIGN=top>
+			<Table Border=2 Cellpadding=3 CELLSPACING=0>
+				<tr bgcolor="#CCCCFF" class="TableHeadingColor">
+				<td colspan=0> <font size=+1> <center><b> Attribute Definition </b></font></center></td>
+				</tr>
+				<tr>
+					<td> Attribute Type </td>
+					<td> Scalar </td>
+				</tr>
+				<tr>
+					<td> R/W Type </td>
+					<td> READ </td>
+				</tr>
+				<tr>
+					<td> Data Type </td>
+					<td> Tango::DEV_DOUBLE </td>
+				</tr>
+				<tr>
+					<td> Display Level </td>
+					<td> OPERATOR </td>
+				</tr>
+				<tr>
+					<td> Inherited </td>
+					<td> false </td>
+				</tr>
+				<tr>
+					<td> Abstract </td>
+					<td> false </td>
+				</tr>
+				<tr>
+					<td> Polling Period </td>
+					<td> Not polled </td>
+				</tr>
+				<tr>
+					<td> Memorized </td>
+					<td> Not set </td>
+				</tr>
+			<Tr BGCOLOR="#CCCCFF"><Td><Hr></Td><Td><Hr></Td></Tr>
+				<tr>
+					<td> Read NOT allowed for </td>
+					<td> <font size="-1">  <li> INIT </li> </font> </td>
+				</tr>
+			</table>
+		</td>
+		<TD ALIGN="Center" VALIGN=top>
+			<Table Border=2 Cellpadding=3 CELLSPACING=0>
+				<tr bgcolor="#CCCCFF" class="TableHeadingColor">
+				<td colspan=0> <font size=+1> <center><b> Attribute Properties </b></font></center></td>
+				</tr>
+				<tr>
+					<td> label </td>
+					<td>  </td>
+				</tr>
+				<tr>
+					<td> unit </td>
+					<td> 'Celsius' </td>
+				</tr>
+				<tr>
+					<td> standard unit </td>
+					<td>  </td>
+				</tr>
+				<tr>
+					<td> display unit </td>
+					<td>  </td>
+				</tr>
+				<tr>
+					<td> format </td>
+					<td>  </td>
+				</tr>
+				<tr>
+					<td> max_value </td>
+					<td>  </td>
+				</tr>
+				<tr>
+					<td> min_value </td>
+					<td>  </td>
+				</tr>
+				<tr>
+					<td> max_alarm </td>
+					<td>  </td>
+				</tr>
+				<tr>
+					<td> min_alarm </td>
+					<td>  </td>
+				</tr>
+				<tr>
+					<td> max_warning </td>
+					<td>  </td>
+				</tr>
+				<tr>
+					<td> min_warning </td>
+					<td>  </td>
+				</tr>
+				<tr>
+					<td> delta_time </td>
+					<td>  </td>
+				</tr>
+				<tr>
+					<td> delta_val </td>
+					<td>  </td>
+				</tr>
+			</table>
+		</td>
+		<TD ALIGN="Right" VALIGN=top>
+			<Table Border=2 Cellpadding=3 CELLSPACING=0>
+				<tr bgcolor="#CCCCFF" class="TableHeadingColor">
+				<td colspan=0> <font size=+1> <center><b> Attribute Event Criteria </b></font></center></td>
+				</tr>
+				<tr>
+					<td> Periodic </td>
+					<td> Not set </td>
+				</tr>
+				<tr>
+					<td> Relative Change </td>
+					<td> Not set </td>
+				</tr>
+				<tr>
+					<td> Absolute Change </td>
+					<td> Not set </td>
+				</tr>
+			<Tr BGCOLOR="#CCCCFF"><Td><Hr></Td><Td><Hr></Td></Tr>
+				<tr>
+					<td> Archive Periodic </td>
+					<td> Not set </td>
+				</tr>
+				<tr>
+					<td> Archive Relative Change </td>
+					<td> Not set </td>
+				</tr>
+				<tr>
+					<td> Archive Absolute Change </td>
+					<td> Not set </td>
+				</tr>
+			<Tr BGCOLOR="#CCCCFF"><Td><Hr></Td><Td><Hr></Td></Tr>
+				<tr>
+					<td> Push Change event by user code </td>
+					<td> false </td>
+				</tr>
+			<Tr BGCOLOR="#CCCCFF"><Td> </Td><Td> </Td></Tr>
+				<tr>
+					<td> Push Archive event by user code </td>
+					<td> false </td>
+				</tr>
+			<Tr BGCOLOR="#CCCCFF"><Td> </Td><Td> </Td></Tr>
+				<tr>
+					<td> Push DataReady event by user code </td>
+					<td> Not set </td>
+				</tr>
+			</table>
+		</td>
+	</TR>
+</table>
+<br><br>
+<hr>
+<a name="attrStateCode64"> </a>
+<br><br><br>
+<font size="+1"><u><b> Attribute StateCode64 : </b></u></font>
+<ul>
+</ul>
+<br><br><br>
+<Table Border=0 Cellpadding=0 CELLSPACING=20>
+	<TR>
+		<TD ALIGN="left" VALIGN=top>
+			<Table Border=2 Cellpadding=3 CELLSPACING=0>
+				<tr bgcolor="#CCCCFF" class="TableHeadingColor">
+				<td colspan=0> <font size=+1> <center><b> Attribute Definition </b></font></center></td>
+				</tr>
+				<tr>
+					<td> Attribute Type </td>
+					<td> Scalar </td>
+				</tr>
+				<tr>
+					<td> R/W Type </td>
+					<td> READ </td>
+				</tr>
+				<tr>
+					<td> Data Type </td>
+					<td> Tango::DEV_LONG64 </td>
+				</tr>
+				<tr>
+					<td> Display Level </td>
+					<td> OPERATOR </td>
+				</tr>
+				<tr>
+					<td> Inherited </td>
+					<td> false </td>
+				</tr>
+				<tr>
+					<td> Abstract </td>
+					<td> false </td>
+				</tr>
+				<tr>
+					<td> Polling Period </td>
+					<td> Not polled </td>
+				</tr>
+				<tr>
+					<td> Memorized </td>
+					<td> Not set </td>
+				</tr>
+			<Tr BGCOLOR="#CCCCFF"><Td><Hr></Td><Td><Hr></Td></Tr>
+				<tr>
+					<td> Read allowed for </td>
+					<td> All states </td>
+				</tr>
+			</table>
+		</td>
+		<TD ALIGN="Center" VALIGN=top>
+			<Table Border=2 Cellpadding=3 CELLSPACING=0>
+				<tr bgcolor="#CCCCFF" class="TableHeadingColor">
+				<td colspan=0> <font size=+1> <center><b> Attribute Properties </b></font></center></td>
+				</tr>
+				<tr>
+					<td> label </td>
+					<td>  </td>
+				</tr>
+				<tr>
+					<td> unit </td>
+					<td>  </td>
+				</tr>
+				<tr>
+					<td> standard unit </td>
+					<td>  </td>
+				</tr>
+				<tr>
+					<td> display unit </td>
+					<td>  </td>
+				</tr>
+				<tr>
+					<td> format </td>
+					<td>  </td>
+				</tr>
+				<tr>
+					<td> max_value </td>
+					<td>  </td>
+				</tr>
+				<tr>
+					<td> min_value </td>
+					<td>  </td>
+				</tr>
+				<tr>
+					<td> max_alarm </td>
+					<td>  </td>
+				</tr>
+				<tr>
+					<td> min_alarm </td>
+					<td>  </td>
+				</tr>
+				<tr>
+					<td> max_warning </td>
+					<td>  </td>
+				</tr>
+				<tr>
+					<td> min_warning </td>
+					<td>  </td>
+				</tr>
+				<tr>
+					<td> delta_time </td>
+					<td>  </td>
+				</tr>
+				<tr>
+					<td> delta_val </td>
+					<td>  </td>
+				</tr>
+			</table>
+		</td>
+		<TD ALIGN="Right" VALIGN=top>
+			<Table Border=2 Cellpadding=3 CELLSPACING=0>
+				<tr bgcolor="#CCCCFF" class="TableHeadingColor">
+				<td colspan=0> <font size=+1> <center><b> Attribute Event Criteria </b></font></center></td>
+				</tr>
+				<tr>
+					<td> Periodic </td>
+					<td> Not set </td>
+				</tr>
+				<tr>
+					<td> Relative Change </td>
+					<td> Not set </td>
+				</tr>
+				<tr>
+					<td> Absolute Change </td>
+					<td> Not set </td>
+				</tr>
+			<Tr BGCOLOR="#CCCCFF"><Td><Hr></Td><Td><Hr></Td></Tr>
+				<tr>
+					<td> Archive Periodic </td>
+					<td> Not set </td>
+				</tr>
+				<tr>
+					<td> Archive Relative Change </td>
+					<td> Not set </td>
+				</tr>
+				<tr>
+					<td> Archive Absolute Change </td>
+					<td> Not set </td>
+				</tr>
+			<Tr BGCOLOR="#CCCCFF"><Td><Hr></Td><Td><Hr></Td></Tr>
+				<tr>
+					<td> Push Change event by user code </td>
+					<td> false </td>
+				</tr>
+			<Tr BGCOLOR="#CCCCFF"><Td> </Td><Td> </Td></Tr>
+				<tr>
+					<td> Push Archive event by user code </td>
+					<td> false </td>
+				</tr>
+			<Tr BGCOLOR="#CCCCFF"><Td> </Td><Td> </Td></Tr>
+				<tr>
+					<td> Push DataReady event by user code </td>
+					<td> Not set </td>
+				</tr>
+			</table>
+		</td>
+	</TR>
+</table>
+<br><br>
+<hr>
+<a name="attrRemoteMode"> </a>
+<br><br><br>
+<font size="+1"><u><b> Attribute RemoteMode : </b></u></font>
+<ul>
+</ul>
+<br><br><br>
+<Table Border=0 Cellpadding=0 CELLSPACING=20>
+	<TR>
+		<TD ALIGN="left" VALIGN=top>
+			<Table Border=2 Cellpadding=3 CELLSPACING=0>
+				<tr bgcolor="#CCCCFF" class="TableHeadingColor">
+				<td colspan=0> <font size=+1> <center><b> Attribute Definition </b></font></center></td>
+				</tr>
+				<tr>
+					<td> Attribute Type </td>
+					<td> Scalar </td>
+				</tr>
+				<tr>
+					<td> R/W Type </td>
+					<td> READ_WRITE </td>
+				</tr>
+				<tr>
+					<td> Data Type </td>
+					<td> Tango::DEV_BOOLEAN </td>
+				</tr>
+				<tr>
+					<td> Display Level </td>
+					<td> OPERATOR </td>
+				</tr>
+				<tr>
+					<td> Inherited </td>
+					<td> false </td>
+				</tr>
+				<tr>
+					<td> Abstract </td>
+					<td> false </td>
+				</tr>
+				<tr>
+					<td> Polling Period </td>
+					<td> Not polled </td>
+				</tr>
+				<tr>
+					<td> Memorized </td>
+					<td> Not set </td>
+				</tr>
+			<Tr BGCOLOR="#CCCCFF"><Td><Hr></Td><Td><Hr></Td></Tr>
+				<tr>
+					<td> Read NOT allowed for </td>
+					<td> <font size="-1">  <li> INIT </li> </font> </td>
+				</tr>
+				<tr>
+					<td> Write allowed for </td>
+					<td> All states </td>
+				</tr>
+			</table>
+		</td>
+		<TD ALIGN="Center" VALIGN=top>
+			<Table Border=2 Cellpadding=3 CELLSPACING=0>
+				<tr bgcolor="#CCCCFF" class="TableHeadingColor">
+				<td colspan=0> <font size=+1> <center><b> Attribute Properties </b></font></center></td>
+				</tr>
+				<tr>
+					<td> label </td>
+					<td>  </td>
+				</tr>
+				<tr>
+					<td> unit </td>
+					<td>  </td>
+				</tr>
+				<tr>
+					<td> standard unit </td>
+					<td>  </td>
+				</tr>
+				<tr>
+					<td> display unit </td>
+					<td>  </td>
+				</tr>
+				<tr>
+					<td> format </td>
+					<td>  </td>
+				</tr>
+				<tr>
+					<td> max_value </td>
+					<td>  </td>
+				</tr>
+				<tr>
+					<td> min_value </td>
+					<td>  </td>
+				</tr>
+				<tr>
+					<td> max_alarm </td>
+					<td>  </td>
+				</tr>
+				<tr>
+					<td> min_alarm </td>
+					<td>  </td>
+				</tr>
+				<tr>
+					<td> max_warning </td>
+					<td>  </td>
+				</tr>
+				<tr>
+					<td> min_warning </td>
+					<td>  </td>
+				</tr>
+				<tr>
+					<td> delta_time </td>
+					<td>  </td>
+				</tr>
+				<tr>
+					<td> delta_val </td>
+					<td>  </td>
+				</tr>
+			</table>
+		</td>
+		<TD ALIGN="Right" VALIGN=top>
+			<Table Border=2 Cellpadding=3 CELLSPACING=0>
+				<tr bgcolor="#CCCCFF" class="TableHeadingColor">
+				<td colspan=0> <font size=+1> <center><b> Attribute Event Criteria </b></font></center></td>
+				</tr>
+				<tr>
+					<td> Periodic </td>
+					<td> Not set </td>
+				</tr>
+				<tr>
+					<td> Relative Change </td>
+					<td> Not set </td>
+				</tr>
+				<tr>
+					<td> Absolute Change </td>
+					<td> Not set </td>
+				</tr>
+			<Tr BGCOLOR="#CCCCFF"><Td><Hr></Td><Td><Hr></Td></Tr>
+				<tr>
+					<td> Archive Periodic </td>
+					<td> Not set </td>
+				</tr>
+				<tr>
+					<td> Archive Relative Change </td>
+					<td> Not set </td>
+				</tr>
+				<tr>
+					<td> Archive Absolute Change </td>
+					<td> Not set </td>
+				</tr>
+			<Tr BGCOLOR="#CCCCFF"><Td><Hr></Td><Td><Hr></Td></Tr>
+				<tr>
+					<td> Push Change event by user code </td>
+					<td> false </td>
+				</tr>
+			<Tr BGCOLOR="#CCCCFF"><Td> </Td><Td> </Td></Tr>
+				<tr>
+					<td> Push Archive event by user code </td>
+					<td> false </td>
+				</tr>
+			<Tr BGCOLOR="#CCCCFF"><Td> </Td><Td> </Td></Tr>
+				<tr>
+					<td> Push DataReady event by user code </td>
+					<td> Not set </td>
+				</tr>
+			</table>
+		</td>
+	</TR>
+</table>
+<br><br>
+<hr>
+<a name="attrErrors"> </a>
+<br><br><br>
+<font size="+1"><u><b> Attribute Errors : </b></u></font>
+<ul>
+</ul>
+<br><br><br>
+<Table Border=0 Cellpadding=0 CELLSPACING=20>
+	<TR>
+		<TD ALIGN="left" VALIGN=top>
+			<Table Border=2 Cellpadding=3 CELLSPACING=0>
+				<tr bgcolor="#CCCCFF" class="TableHeadingColor">
+				<td colspan=0> <font size=+1> <center><b> Attribute Definition </b></font></center></td>
+				</tr>
+				<tr>
+					<td> Attribute Type </td>
+					<td> Spectrum  ( 32 ) </td>
+				</tr>
+				<tr>
+					<td> R/W Type </td>
+					<td> READ </td>
+				</tr>
+				<tr>
+					<td> Data Type </td>
+					<td> Tango::DEV_STRING </td>
+				</tr>
+				<tr>
+					<td> Display Level </td>
+					<td> OPERATOR </td>
+				</tr>
+				<tr>
+					<td> Inherited </td>
+					<td> false </td>
+				</tr>
+				<tr>
+					<td> Abstract </td>
+					<td> false </td>
+				</tr>
+				<tr>
+					<td> Polling Period </td>
+					<td> Not polled </td>
+				</tr>
+				<tr>
+					<td> Memorized </td>
+					<td> Not set </td>
+				</tr>
+			<Tr BGCOLOR="#CCCCFF"><Td><Hr></Td><Td><Hr></Td></Tr>
+				<tr>
+					<td> Read allowed for </td>
+					<td> All states </td>
+				</tr>
+			</table>
+		</td>
+		<TD ALIGN="Center" VALIGN=top>
+			<Table Border=2 Cellpadding=3 CELLSPACING=0>
+				<tr bgcolor="#CCCCFF" class="TableHeadingColor">
+				<td colspan=0> <font size=+1> <center><b> Attribute Properties </b></font></center></td>
+				</tr>
+				<tr>
+					<td> label </td>
+					<td>  </td>
+				</tr>
+				<tr>
+					<td> unit </td>
+					<td>  </td>
+				</tr>
+				<tr>
+					<td> standard unit </td>
+					<td>  </td>
+				</tr>
+				<tr>
+					<td> display unit </td>
+					<td>  </td>
+				</tr>
+				<tr>
+					<td> format </td>
+					<td>  </td>
+				</tr>
+				<tr>
+					<td> max_value </td>
+					<td>  </td>
+				</tr>
+				<tr>
+					<td> min_value </td>
+					<td>  </td>
+				</tr>
+				<tr>
+					<td> max_alarm </td>
+					<td>  </td>
+				</tr>
+				<tr>
+					<td> min_alarm </td>
+					<td>  </td>
+				</tr>
+				<tr>
+					<td> max_warning </td>
+					<td>  </td>
+				</tr>
+				<tr>
+					<td> min_warning </td>
+					<td>  </td>
+				</tr>
+				<tr>
+					<td> delta_time </td>
+					<td>  </td>
+				</tr>
+				<tr>
+					<td> delta_val </td>
+					<td>  </td>
+				</tr>
+			</table>
+		</td>
+		<TD ALIGN="Right" VALIGN=top>
+			<Table Border=2 Cellpadding=3 CELLSPACING=0>
+				<tr bgcolor="#CCCCFF" class="TableHeadingColor">
+				<td colspan=0> <font size=+1> <center><b> Attribute Event Criteria </b></font></center></td>
+				</tr>
+				<tr>
+					<td> Periodic </td>
+					<td> Not set </td>
+				</tr>
+				<tr>
+					<td> Relative Change </td>
+					<td> Not set </td>
+				</tr>
+				<tr>
+					<td> Absolute Change </td>
+					<td> Not set </td>
+				</tr>
+			<Tr BGCOLOR="#CCCCFF"><Td><Hr></Td><Td><Hr></Td></Tr>
+				<tr>
+					<td> Archive Periodic </td>
+					<td> Not set </td>
+				</tr>
+				<tr>
+					<td> Archive Relative Change </td>
+					<td> Not set </td>
+				</tr>
+				<tr>
+					<td> Archive Absolute Change </td>
+					<td> Not set </td>
+				</tr>
+			<Tr BGCOLOR="#CCCCFF"><Td><Hr></Td><Td><Hr></Td></Tr>
+				<tr>
+					<td> Push Change event by user code </td>
+					<td> false </td>
+				</tr>
+			<Tr BGCOLOR="#CCCCFF"><Td> </Td><Td> </Td></Tr>
+				<tr>
+					<td> Push Archive event by user code </td>
+					<td> false </td>
+				</tr>
+			<Tr BGCOLOR="#CCCCFF"><Td> </Td><Td> </Td></Tr>
+				<tr>
+					<td> Push DataReady event by user code </td>
+					<td> Not set </td>
+				</tr>
+			</table>
+		</td>
+	</TR>
+</table>
+<br><br>
+<hr>
+<br><br>
+<hr>
+<a name="states"> </a>
+<br><br><br><br>
+<Table Border=2 Cellpadding=3 CELLSPACING=0>
+	<tr bgcolor="#CCCCFF" class="TableHeadingColor">
+	<td colspan=2> <font size=+1> <center><b> Danfysik Class States </b></font></center></td>
+	<tr bgcolor="#CCCCFF" class="TableHeadingColor">
+		<td> <center><b> Name </b></center> </td>
+		<td> <center><b> Description </b></center> </td>
+	</tr>
+	<tr>
+		<td> ALARM </td>
+		<td> Something is not going well, status advice to fix it </td>
+	</tr>
+	<tr>
+		<td> FAULT </td>
+		<td> Something went wrong, status tells reasons and recover by Init() </td>
+	</tr>
+	<tr>
+		<td> INIT </td>
+		<td> Initializint, power supply not yet available </td>
+	</tr>
+	<tr>
+		<td> MOVING </td>
+		<td> The current is changing </td>
+	</tr>
+	<tr>
+		<td> OFF </td>
+		<td> Communication with the power supply done, no current in the output </td>
+	</tr>
+	<tr>
+		<td> ON </td>
+		<td> The power supply have current in the output </td>
+	</tr>
+</table>
+</body>
+</html>

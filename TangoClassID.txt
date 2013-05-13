@@ -1,0 +1,11 @@
+/**
+ * Device Class Identification:
+ * 
+ * Class Name   :	Danfysik
+ * Contact      :	sblanch@cells.es
+ * Class Family :	PowerSupply
+ * Platform     :	All Platforms
+ * Bus          :	Not Applicable
+ * Manufacturer :	Danfysic
+ * Reference    :	9100
+ */
