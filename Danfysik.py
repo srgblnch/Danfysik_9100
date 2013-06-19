@@ -81,9 +81,11 @@ class Danfysik(PyTango.Device_3Impl):
         self.changeState(PyTango.DevState.INIT)
         self.get_device_properties(self.get_device_class())
         
-        self.info_stream("Serial lines is %s(%s)"%(type(self.SerialLine),self.SerialLine))
+        self.info_stream("Serial lines is %s (%s)"%(self.SerialLine,type(self.SerialLine)))
         self._linkSerial()
 
+        self.set_change_event('State', True, False)
+        self.set_change_event('Status', True, False)
 #        self.set_change_event('Current', True, False)
 #        self.set_change_event('Voltage', True, False)
         self.set_change_event('RemoteMode', True, False)
@@ -471,11 +473,11 @@ class Danfysik(PyTango.Device_3Impl):
             elif len(self.statusString) > 0 and self.statusString[0] == '0':
                 #self._errors.append(self.statusDict[0][0]+' : '+self.statusDict[0][1][1]+'.')
                 #adjusting state of the device is necessary
-                if self.get_state() == PyTango.DevState.OFF:
+                if self.get_state() != PyTango.DevState.ON:
                     self.changeState(PyTango.DevState.ON)
             else:
                 self._errors.append(self.statusDict[0][0]+' : '+self.statusDict[0][1][0]+'.')
-                if self.get_state() == PyTango.DevState.ON:
+                if self.get_state() != PyTango.DevState.OFF:
                     self.changeState(PyTango.DevState.OFF)
             #when first element processed, proceed with the next ones
             for i in range(1, len(self.statusString)):
@@ -539,6 +541,8 @@ class Danfysik(PyTango.Device_3Impl):
         self.set_state(newstate)
         self.addStatusMsg()
         self.push_change_event('State',newstate)
+        #When state changes, clean the previous non important logs.
+        self.addStatusMsg("") 
     def fireEventsList(self,eventsAttrList):
         timestamp = time.time()
         for attrEvent in eventsAttrList:
@@ -558,18 +562,20 @@ class Danfysik(PyTango.Device_3Impl):
         self.addStatusMsg("")
     def addStatusMsg(self,current=None,important = False):
         try:
-            self.debug_stream("In %s::addStatusMsg()"%self.get_name())
+            self.info_stream("In %s::addStatusMsg()"%self.get_name())
             msg = "The device is in %s state.\n"%(self.get_state())
             for ilog in self._important_logs:
                 msg = "%s%s\n"%(msg,ilog)
-            if not current == None:
+            if not current == None and not current == "":
                 status = "%s%s\n"%(msg,current)
+            else: status = "%s"%(msg)
             self.set_status(status)
             self.push_change_event('Status',status)
             if important and not current in self._important_logs:
                 self._important_logs.append(current)
         except Exception,e:
             self.error_stream("Exception adding status message: %s"%(e))
+            traceback.format_exc()
 
 # end auxiliar methods
 ###
