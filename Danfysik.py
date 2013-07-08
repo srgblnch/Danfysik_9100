@@ -65,6 +65,8 @@ class Danfysik(PyTango.Device_3Impl):
         self.statusDict = state.DanfysikStatusDict
         self._errors = []
         self._remoteMode = None
+        self._haveSerialLineConn = False
+        self._serialLineTrace = []
         Danfysik.init_device(self)
 
 #------------------------------------------------------------------
@@ -90,6 +92,7 @@ class Danfysik(PyTango.Device_3Impl):
 #        self.set_change_event('Voltage', True, False)
         self.set_change_event('RemoteMode', True, False)
         self.set_change_event('Errors', True, False)
+        self.set_change_event('SerialLineTrace', True, False)
 
     def _linkSerial(self):
         try:
@@ -105,10 +108,19 @@ class Danfysik(PyTango.Device_3Impl):
                         self.changeState(PyTango.DevState.FAULT)
                         self.cleanAllImportantLogs()
                         self.addStatusMsg("Serial line is not responding",True)
+                        if self._haveSerialLineConn:
+                            self.append2SerialLineTrace("Serial line is not responding")
+                            self._haveSerialLineConn = False
                     elif self.statusString[0] == '!':
                         self.changeState(PyTango.DevState.OFF)
+                        if not self._haveSerialLineConn:
+                            self.append2SerialLineTrace("Serial line recovered")
+                            self._haveSerialLineConn = True
                     else:
                         self.changeState(PyTango.DevState.ON)
+                        if not self._haveSerialLineConn:
+                            self.append2SerialLineTrace("Serial line recovered")
+                            self._haveSerialLineConn = True
                         self.dp.DevSerWriteString('ERRT\r')
                         self.dp.DevSerFlush(2)
                 else:
@@ -405,6 +417,15 @@ class Danfysik(PyTango.Device_3Impl):
 
         attr.set_value(self._errors,len(self._errors))
 
+#------------------------------------------------------------------
+#   Read SerialLineTrace attribute
+#------------------------------------------------------------------
+    def read_SerialLineTrace(self, attr):
+        self.debug_stream("In %s::read_SerialLineTrace()"%(self.get_name()))
+        #   Add your own code here
+
+        attr.set_value(self._serialLineTrace,len(self._serialLineTrace))
+
 #==================================================================
 #
 #   Danfysik command methods
@@ -470,15 +491,24 @@ class Danfysik(PyTango.Device_3Impl):
                 self.cleanAllImportantLogs()
                 self.changeState(PyTango.DevState.FAULT)
                 self.addStatusMsg("Serial line is not responding",True)
+                if self._haveSerialLineConn:
+                    self.append2SerialLineTrace("Serial line is not responding")
+                    self._haveSerialLineConn = False
             elif len(self.statusString) > 0 and self.statusString[0] == '0':
                 #self._errors.append(self.statusDict[0][0]+' : '+self.statusDict[0][1][1]+'.')
                 #adjusting state of the device is necessary
                 if self.get_state() != PyTango.DevState.ON:
                     self.changeState(PyTango.DevState.ON)
+                if not self._haveSerialLineConn:
+                    self.append2SerialLineTrace("Serial line recovered")
+                    self._haveSerialLineConn = True
             else:
                 self._errors.append(self.statusDict[0][0]+' : '+self.statusDict[0][1][0]+'.')
                 if self.get_state() != PyTango.DevState.OFF:
                     self.changeState(PyTango.DevState.OFF)
+                if not self._haveSerialLineConn:
+                    self.append2SerialLineTrace("Serial line recovered")
+                    self._haveSerialLineConn = True
             #when first element processed, proceed with the next ones
             for i in range(1, len(self.statusString)):
                 if i in [0, 3, 8, 13, 15, 23]:
@@ -576,6 +606,11 @@ class Danfysik(PyTango.Device_3Impl):
         except Exception,e:
             self.error_stream("Exception adding status message: %s"%(e))
             traceback.format_exc()
+    def append2SerialLineTrace(self,msg):
+        self._serialLineTrace.append("%s: %s"%(time.ctime(),msg))
+        while len(self._serialLineTrace) >= 32:
+            self._serialLineTrace.pop()
+        self.push_change_event('SerialLineTrace',self._serialLineTrace)
 
 # end auxiliar methods
 ###
@@ -666,6 +701,14 @@ class DanfysikClass(PyTango.DeviceClass):
             [[PyTango.DevString,
             PyTango.SPECTRUM,
             PyTango.READ,32],
+             ],
+        'SerialLineTrace':
+            [[PyTango.DevString,
+            PyTango.SPECTRUM,
+            PyTango.READ,32],
+            {
+             'description':'Collect traces about the serial line cuts and recovers'
+            }
              ]
         }
 
