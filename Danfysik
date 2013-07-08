@@ -1,0 +1,6 @@
+#!/bin/sh
+
+. alba_blissrc
+
+cd $SICILIA/ds/python/Danfysik
+screen -dm -S Danfysik-$1 python Danfysik.py $1 $2
