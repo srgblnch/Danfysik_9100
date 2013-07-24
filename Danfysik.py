@@ -107,7 +107,7 @@ class Danfysik(PyTango.Device_3Impl):
                     if self.statusString[0] == '':
                         self.changeState(PyTango.DevState.FAULT)
                         self.cleanAllImportantLogs()
-                        self.addStatusMsg("Serial line is not responding",True)
+                        self.addStatusMsg("Serial line is not responding",False)
                         if self._haveSerialLineConn:
                             self.append2SerialLineTrace("Serial line is not responding")
                             self._haveSerialLineConn = False
@@ -490,7 +490,7 @@ class Danfysik(PyTango.Device_3Impl):
             if self.statusString == '':
                 self.cleanAllImportantLogs()
                 self.changeState(PyTango.DevState.FAULT)
-                self.addStatusMsg("Serial line is not responding",True)
+                self.addStatusMsg("Serial line is not responding",False)
                 if self._haveSerialLineConn:
                     self.append2SerialLineTrace("Serial line is not responding")
                     self._haveSerialLineConn = False
